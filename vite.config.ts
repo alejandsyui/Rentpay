@@ -3,13 +3,13 @@ import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Set base to repo name for GitHub Pages
+// Use a relative base so built assets use ./assets/... which works on GitHub Pages
 const repoName = 'Rentpay';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: `/${repoName}/`,
+  base: './',
     server: {
       port: 3000,
       host: '0.0.0.0',
