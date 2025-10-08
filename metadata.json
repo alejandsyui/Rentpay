@@ -1,0 +1,7 @@
+{
+  "name": "RentPay Portal",
+  "description": "A comprehensive rental management application for tenants and landlords. Tenants can view payment schedules on a calendar, make payments through various simulated methods, and receive digital receipts. Landlords have an admin panel to set rent prices and due dates.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
